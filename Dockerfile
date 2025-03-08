@@ -1,4 +1,4 @@
-FROM node:20.17.0-alpine AS base
+FROM node:16.14.0-alpine AS base
 
 RUN apk add --no-cache gcompat
 
@@ -14,7 +14,7 @@ COPY . .
 
 RUN npx prisma generate  
 
-RUN npx nest build
+RUN npm run build
 
 FROM base as production
 
