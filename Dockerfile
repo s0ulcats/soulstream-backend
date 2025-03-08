@@ -14,7 +14,7 @@ COPY . .
 
 RUN npx prisma generate  
 
-RUN npx build  
+RUN npm run build  
 
 FROM base as production
 
