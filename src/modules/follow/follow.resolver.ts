@@ -2,8 +2,8 @@ import { Args, Mutation, Query, Resolver } from '@nestjs/graphql'
 
 import { FollowService } from './follow.service'
 import { FollowModel } from './models/follow.model'
-import { Authorization } from '@/src/shared/decorations/auth.decorator'
-import { Authorized } from '@/src/shared/decorations/authorized.decorator'
+import { Authorization } from '@/shared/decorations/auth.decorator'
+import { Authorized } from '@/shared/decorations/authorized.decorator'
 import { User } from '@prisma/client'
 
 @Resolver('Follow')

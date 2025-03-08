@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 
-import { PrismaService } from '@/src/core/prisma/prisma.service'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 import { StripeService } from '../../libs/stripe/stripe.service'
 import { User } from '@prisma/client'

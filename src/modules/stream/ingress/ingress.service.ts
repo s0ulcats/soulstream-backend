@@ -6,7 +6,7 @@ import {
 	IngressVideoEncodingPreset
 } from 'livekit-server-sdk'
 
-import { PrismaService } from '@/src/core/prisma/prisma.service'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 import { LivekitService } from '../../libs/livekit/livekit.service'
 import type { User } from '@prisma/client'

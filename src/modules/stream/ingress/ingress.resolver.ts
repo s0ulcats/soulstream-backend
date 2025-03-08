@@ -2,8 +2,8 @@ import { Args, Mutation, Resolver } from '@nestjs/graphql'
 import type { IngressInput } from 'livekit-server-sdk'
 
 import { IngressService } from './ingress.service'
-import { Authorization } from '@/src/shared/decorations/auth.decorator'
-import { Authorized } from '@/src/shared/decorations/authorized.decorator'
+import { Authorization } from '@/shared/decorations/auth.decorator'
+import { Authorized } from '@/shared/decorations/authorized.decorator'
 import { User } from '@prisma/client'
 
 @Resolver('Ingress')

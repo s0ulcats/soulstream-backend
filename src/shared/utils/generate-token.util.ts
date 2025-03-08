@@ -1,4 +1,4 @@
-import { PrismaService } from "@/src/core/prisma/prisma.service";
+import { PrismaService } from "@/core/prisma/prisma.service";
 import { TokenType, type User } from "@prisma/client";
 import {v4 as uuidv4} from 'uuid'
 

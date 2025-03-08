@@ -4,7 +4,7 @@ import {
 	NotFoundException
 } from '@nestjs/common'
 
-import { PrismaService } from '@/src/core/prisma/prisma.service'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 import { SendMessageInput } from './inputs/send-message.input'
 import type { User } from '@prisma/client'

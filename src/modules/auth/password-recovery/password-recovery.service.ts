@@ -1,14 +1,14 @@
-import { PrismaService } from '@/src/core/prisma/prisma.service';
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { MailService } from '../../libs/mail/mail.service';
 import type { Request } from 'express';
 import { ResetPasswordInput } from './inputs/reset-password.input';
-import { generateToken } from '@/src/shared/utils/generate-token.util';
 import { TokenType } from '@prisma/client';
-import { getSessionMetadata } from '@/src/shared/utils/session-metadata.util';
 import { NewPasswordInput } from './inputs/new-password.input';
 import { hash } from 'argon2';
 import { TelegramService } from '../../libs/telegram/telegram.service';
+import { PrismaService } from '@/core/prisma/prisma.service';
+import { generateToken } from '@/shared/utils/generate-token.util';
+import { getSessionMetadata } from '@/shared/utils/session-metadata.util';
 
 @Injectable()
 export class PasswordRecoveryService {

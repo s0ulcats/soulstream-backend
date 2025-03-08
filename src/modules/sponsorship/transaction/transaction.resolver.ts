@@ -1,8 +1,8 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { TransactionService } from './transaction.service';
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
+import { Authorization } from '@/shared/decorations/auth.decorator';
 import { TransactionModel } from './models/transaction.model';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
 import type { User } from '@prisma/client';
 import { MakePaymentModel } from './models/make-payment.model';
 

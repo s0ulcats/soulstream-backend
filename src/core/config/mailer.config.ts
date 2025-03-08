@@ -1,4 +1,4 @@
-import { isDev } from "@/src/shared/utils/is-dev.util";
+import { isDev } from "@/shared/utils/is-dev.util";
 import type { MailerOptions } from "@nestjs-modules/mailer";
 import { ConfigService } from "@nestjs/config";
 import { join } from "path";

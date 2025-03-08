@@ -1,9 +1,9 @@
-import { UserAgent } from '@/src/shared/decorations/userAgent.decorator';
-import { GqlContext } from '@/src/shared/types/gql-context.type';
 import { Args, Context, Mutation, Resolver } from '@nestjs/graphql';
 import { ResetPasswordInput } from './inputs/reset-password.input';
 import { PasswordRecoveryService } from './password-recovery.service';
 import { NewPasswordInput } from './inputs/new-password.input';
+import { GqlContext } from '@/shared/types/gql-context.type';
+import { UserAgent } from '@/shared/decorations/userAgent.decorator';
 
 @Resolver('PasswordRecovery')
 export class PasswordRecoveryResolver {

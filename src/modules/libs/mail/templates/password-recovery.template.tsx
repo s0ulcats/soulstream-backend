@@ -1,4 +1,4 @@
-import type { SessionMetadata } from '@/src/shared/types/session-metadata.type'
+import type { SessionMetadata } from '@/shared/types/session-metadata.type'
 import * as React from 'react'
 import { Body, Head, Heading, Link, Preview, Section, Tailwind, Text } from '@react-email/components'
 import { Html } from '@react-email/html'

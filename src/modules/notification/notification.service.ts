@@ -1,5 +1,5 @@
-import { PrismaService } from '@/src/core/prisma/prisma.service';
-import { generateToken } from '@/src/shared/utils/generate-token.util';
+import { PrismaService } from '@/core/prisma/prisma.service';
+import { generateToken } from '@/shared/utils/generate-token.util';
 import { Injectable } from '@nestjs/common';
 import { NotificationType, type SponsorshipPlan, TokenType, type User } from '@prisma/client';
 import { ChangeNotificationsSettingsInput } from './inputs/change-notification-settings.input';

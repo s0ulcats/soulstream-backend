@@ -1,4 +1,4 @@
-import { UserModel } from "@/src/modules/auth/account/models/user.model";
+import { UserModel } from "@/modules/auth/account/models/user.model";
 import { Field, ID, ObjectType, registerEnumType } from "@nestjs/graphql";
 import { TransactionStatus, type Transaction } from "@prisma/client";
 

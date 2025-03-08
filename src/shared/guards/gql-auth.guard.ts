@@ -1,4 +1,4 @@
-import { PrismaService } from "@/src/core/prisma/prisma.service";
+import { PrismaService } from "@/core/prisma/prisma.service";
 import { type CanActivate, type ExecutionContext, Injectable, UnauthorizedException } from "@nestjs/common";
 import { GqlExecutionContext } from "@nestjs/graphql";
 

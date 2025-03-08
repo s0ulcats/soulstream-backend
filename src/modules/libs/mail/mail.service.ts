@@ -4,7 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { VerificationTemplate } from './templates/verification.template';
 import { render } from '@react-email/components';
 import { PasswordRecoveryTemplate } from './templates/password-recovery.template';
-import type { SessionMetadata } from '@/src/shared/types/session-metadata.type';
+import type { SessionMetadata } from '@/shared/types/session-metadata.type';
 import { DeactivateTemplate } from './templates/deactivate.template';
 import { AccountDeletionTemplate } from './templates/account-delation';
 import { EnableTwoFactorTemplate } from './templates/enable-two-factor.template';

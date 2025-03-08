@@ -5,14 +5,13 @@ import {
 } from '@nestjs/common'
 import { hash, verify } from 'argon2'
 
-import { PrismaService } from '@/src/core/prisma/prisma.service'
-
 import { VerificationService } from '../verification/verification.service'
 
 import { ChangeEmailInput } from './inputs/change-email.input'
 import { ChangePasswordInput } from './inputs/change-password.input'
 import { CreateUserInput } from './inputs/create-user.input'
 import { User } from '@prisma/client'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 @Injectable()
 export class AccountService {

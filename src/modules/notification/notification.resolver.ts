@@ -1,9 +1,9 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { NotificationService } from './notification.service';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
 import type { User } from '@prisma/client';
 import { NotificationModel } from './models/notification.model';
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
+import { Authorization } from '@/shared/decorations/auth.decorator';
 import { ChangeNotificationsSettingsResponse } from './models/notification-settings.model';
 import { ChangeNotificationsSettingsInput } from './inputs/change-notification-settings.input';
 

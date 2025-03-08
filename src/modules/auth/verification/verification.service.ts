@@ -5,10 +5,10 @@ import {
 } from '@nestjs/common'
 import type { Request } from 'express'
 
-import { PrismaService } from '@/src/core/prisma/prisma.service'
-import { generateToken } from '@/src/shared/utils/generate-token.util'
-import { getSessionMetadata } from '@/src/shared/utils/session-metadata.util'
-import { saveSession } from '@/src/shared/utils/session.util'
+import { PrismaService } from '@/core/prisma/prisma.service'
+import { generateToken } from '@/shared/utils/generate-token.util'
+import { getSessionMetadata } from '@/shared/utils/session-metadata.util'
+import { saveSession } from '@/shared/utils/session.util'
 
 import { MailService } from '../../libs/mail/mail.service'
 

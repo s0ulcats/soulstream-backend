@@ -5,9 +5,9 @@ import { ChangeEmailInput } from './inputs/change-email.input'
 import { ChangePasswordInput } from './inputs/change-password.input'
 import { CreateUserInput } from './inputs/create-user.input'
 import { UserModel } from './models/user.model'
-import { Authorization } from '@/src/shared/decorations/auth.decorator'
-import { Authorized } from '@/src/shared/decorations/authorized.decorator'
 import type { User } from '@prisma/client'
+import { Authorization } from '@/shared/decorations/auth.decorator'
+import { Authorized } from '@/shared/decorations/authorized.decorator'
 
 @Resolver('Account')
 export class AccountResolver {

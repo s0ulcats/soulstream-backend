@@ -1,14 +1,13 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql'
 
-import type { User } from '@/prisma/generated'
-import { FollowModel } from '@/src/modules/follow/models/follow.model'
-import { NotificationSettingsModel } from '@/src/modules/notification/models/notification-settings.model'
-import { NotificationModel } from '@/src/modules/notification/models/notification.model'
-import { PlanModel } from '@/src/modules/sponsorship/plan/models/plan.model'
-import { SubscriptionModel } from '@/src/modules/sponsorship/subscription/models/subscription.model'
-import { StreamModel } from '@/src/modules/stream/models/stream.model'
-
 import { SocialLinkModel } from '../../profile/models/social-link.model'
+import type { User } from '@prisma/client'
+import { StreamModel } from '@/modules/stream/models/stream.model'
+import { NotificationModel } from '@/modules/notification/models/notification.model'
+import { NotificationSettingsModel } from '@/modules/notification/models/notification-settings.model'
+import { FollowModel } from '@/modules/follow/models/follow.model'
+import { SubscriptionModel } from '@/modules/sponsorship/subscription/models/subscription.model'
+import { PlanModel } from '@/modules/sponsorship/plan/models/plan.model'
 
 @ObjectType()
 export class UserModel implements User {

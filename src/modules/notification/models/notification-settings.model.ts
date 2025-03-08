@@ -1,6 +1,6 @@
 import { Field, ObjectType } from '@nestjs/graphql'
 
-import { UserModel } from '@/src/modules/auth/account/models/user.model'
+import { UserModel } from '@/modules/auth/account/models/user.model'
 import type { NotificationSettings } from '@prisma/client'
 
 @ObjectType()

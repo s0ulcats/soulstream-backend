@@ -4,14 +4,14 @@ import * as Upload from 'graphql-upload/Upload.js'
 import { AccessToken } from 'livekit-server-sdk'
 import * as sharp from 'sharp'
 
-import type { Prisma, User } from '@/prisma/generated'
-import { PrismaService } from '@/src/core/prisma/prisma.service'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 import { StorageService } from '../libs/storage/storage.service'
 
 import { ChangeStreamInfoInput } from './inputs/change-stream-info.input'
 import { FiltersInput } from './inputs/filters.input'
 import { GenerateStreamTokenInput } from './inputs/generate-stream-token.input'
+import type { Prisma, User } from '@prisma/client'
 
 @Injectable()
 export class StreamService {

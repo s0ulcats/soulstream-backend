@@ -4,8 +4,8 @@ import { AuthModel } from '../account/models/auth.model'
 
 import { VerificationInput } from './inputs/verification.input'
 import { VerificationService } from './verification.service'
-import { UserAgent } from '@/src/shared/decorations/userAgent.decorator'
-import { GqlContext } from '@/src/shared/types/gql-context.type'
+import { UserAgent } from '@/shared/decorations/userAgent.decorator'
+import { GqlContext } from '@/shared/types/gql-context.type'
 
 @Resolver('Verification')
 export class VerificationResolver {

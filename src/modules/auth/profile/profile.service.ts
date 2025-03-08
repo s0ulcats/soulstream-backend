@@ -2,13 +2,13 @@ import { ConflictException, Injectable } from '@nestjs/common'
 import * as Upload from 'graphql-upload/Upload.js'
 import * as sharp from 'sharp'
 
-import type { User } from '@/prisma/generated'
-import { PrismaService } from '@/src/core/prisma/prisma.service'
+import { PrismaService } from '@/core/prisma/prisma.service'
 
 import { StorageService } from '../../libs/storage/storage.service'
 
 import { ChangeProfileInfoInput } from './inputs/change-profile-info.input'
 import { SocialLinkInput, SocialLinkOrderInput } from './inputs/social-link.input'
+import type { User } from '@prisma/client'
 
 @Injectable()
 export class ProfileService {

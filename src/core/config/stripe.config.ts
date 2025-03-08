@@ -1,4 +1,4 @@
-import { TypeStripeOptions } from '@/src/modules/libs/stripe/types/Stripe.type'
+import { TypeStripeOptions } from '@/modules/libs/stripe/types/Stripe.type'
 import { ConfigService } from '@nestjs/config'
 
 export function getStripeConfig(
@@ -7,7 +7,7 @@ export function getStripeConfig(
 	return {
 		apiKey: configService.getOrThrow<string>('STRIPE_SECRET_KEY'),
 		config: {
-			apiVersion: '2024-12-18.acacia'
+			apiVersion: '2025-02-24.acacia'
 		}
 	}
 }

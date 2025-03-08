@@ -1,6 +1,6 @@
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
-import { FileValidationPipe } from '@/src/shared/pipes/file-validation.pipe';
+import { Authorization } from '@/shared/decorations/auth.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
+import { FileValidationPipe } from '@/shared/pipes/file-validation.pipe';
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import * as GraphQLUpload from 'graphql-upload/GraphQLUpload.js';
 import * as Upload from 'graphql-upload/Upload.js';

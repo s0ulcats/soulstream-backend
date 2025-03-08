@@ -1,16 +1,16 @@
-import { PrismaService } from '@/src/core/prisma/prisma.service';
 import { MailService } from '../../libs/mail/mail.service';
 import { ConfigService } from '@nestjs/config';
 import type { Request } from 'express';
 import { TokenType, type User } from '@prisma/client';
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { destroySession } from '@/src/shared/utils/session.util';
-import { generateToken } from '@/src/shared/utils/generate-token.util';
-import { getSessionMetadata } from '@/src/shared/utils/session-metadata.util';
 import { DeactivateAccountInput } from './inputs/deactivate-account.input';
 import { verify } from 'argon2';
 import { TelegramService } from '../../libs/telegram/telegram.service';
-import { RedisService } from '@/src/core/redis/redis.service';
+import { PrismaService } from '@/core/prisma/prisma.service';
+import { RedisService } from '@/core/redis/redis.service';
+import { getSessionMetadata } from '@/shared/utils/session-metadata.util';
+import { generateToken } from '@/shared/utils/generate-token.util';
+import { destroySession } from '@/shared/utils/session.util';
 
 @Injectable()
 export class DeactivateService {

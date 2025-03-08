@@ -1,9 +1,9 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { TotpService } from './totp.service';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
 import { User } from '@prisma/client';
 import { TotpModel } from './modeles/totp.module';
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
+import { Authorization } from '@/shared/decorations/auth.decorator';
 import { EnableTotpInput } from './inputs/enable-totp.input';
 
 @Resolver('Totp')

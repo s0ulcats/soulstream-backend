@@ -1,4 +1,4 @@
-import { IsPasswordsMatchingConstraint } from "@/src/shared/decorations/is-passwords-matching-constraint.decorator";
+import { IsPasswordsMatchingConstraint } from "@/shared/decorations/is-passwords-matching-constraint.decorator";
 import { Field, InputType } from "@nestjs/graphql";
 import { IsNotEmpty, IsString, IsUUID, MinLength, Validate } from "class-validator";
 

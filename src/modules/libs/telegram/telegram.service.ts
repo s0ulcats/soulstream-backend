@@ -1,4 +1,4 @@
-import { PrismaService } from '@/src/core/prisma/prisma.service';
+import { PrismaService } from '@/core/prisma/prisma.service';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { type SponsorshipPlan, TokenType, type User } from '@prisma/client';
@@ -6,7 +6,7 @@ import { Action, Command, Ctx, Start, Update } from 'nestjs-telegraf';
 import { Context, Telegraf } from 'telegraf';
 import { MESSAGES } from './telegram.messages';
 import { BUTTONS } from './telegram.buttons';
-import type { SessionMetadata } from '@/src/shared/types/session-metadata.type';
+import type { SessionMetadata } from '@/shared/types/session-metadata.type';
 
 @Update()
 @Injectable()
