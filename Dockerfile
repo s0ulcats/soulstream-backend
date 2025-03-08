@@ -10,7 +10,10 @@ RUN npm ci --omit=dev
 
 FROM base as build
 
-COPY . .  
+# Устанавливаем NestJS CLI
+RUN npm install -g @nestjs/cli
+
+COPY . .
 
 RUN npx prisma generate  
 
