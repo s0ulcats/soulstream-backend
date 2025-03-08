@@ -1,8 +1,8 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { PlanService } from './plan.service';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
 import { User } from '@prisma/client';
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
+import { Authorization } from '@/shared/decorations/auth.decorator';
 import { PlanModel } from './models/plan.model';
 import { CreatePlanInput } from './inputs/create-plan.input';
 

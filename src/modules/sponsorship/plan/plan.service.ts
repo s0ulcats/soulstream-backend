@@ -1,4 +1,4 @@
-import { PrismaService } from '@/src/core/prisma/prisma.service';
+import { PrismaService } from '@/core/prisma/prisma.service';
 import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { StripeService } from '../../libs/stripe/stripe.service';
 import type { User } from '@prisma/client';

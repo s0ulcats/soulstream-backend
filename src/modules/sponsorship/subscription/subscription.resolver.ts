@@ -1,8 +1,8 @@
 import { Query, Resolver } from '@nestjs/graphql';
 import { SubscriptionService } from './subscription.service';
-import { Authorization } from '@/src/shared/decorations/auth.decorator';
+import { Authorization } from '@/shared/decorations/auth.decorator';
 import { SubscriptionModel } from './models/subscription.model';
-import { Authorized } from '@/src/shared/decorations/authorized.decorator';
+import { Authorized } from '@/shared/decorations/authorized.decorator';
 import type { User } from '@prisma/client';
 
 @Resolver('Subscription')
