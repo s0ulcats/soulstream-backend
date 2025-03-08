@@ -67,7 +67,7 @@
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.0.0",
+    "@nestjs/cli": "^10.4.9",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
