@@ -10,7 +10,7 @@ services:
       - key: APPLICATION_PORT
         value: 4000
       - key: APPLICATION_URL
-        value: http://localhost:4000
+        value: https://soulstream-backend.onrender.com
       - key: GRAPHQL_PREFIX
         value: /graphql
       - key: ALLOWED_ORIGIN
